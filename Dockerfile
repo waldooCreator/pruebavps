@@ -24,6 +24,6 @@ RUN python manage.py collectstatic --noinput || true
 # make entrypoint executable
 RUN chmod +x /app/entrypoint.sh
 
-EXPOSE 8000
+EXPOSE 2000
 
 ENTRYPOINT ["/app/entrypoint.sh"]

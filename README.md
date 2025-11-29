@@ -26,7 +26,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python manage.py migrate
-python manage.py runserver
+python manage.py runserver 0.0.0.0:2000
 ```
 
-Abre `http://127.0.0.1:8000/` en tu navegador.
+Abre `http://127.0.0.1:2000/` en tu navegador.
