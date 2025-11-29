@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=False
+      - DJANGO_SECRET_KEY=supersecretkey
+      - ALLOWED_HOSTS=0.0.0.0,localhost
+    volumes:
+      - .:/app:rw
